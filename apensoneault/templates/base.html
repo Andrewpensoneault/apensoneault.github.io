@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='/js/script.js') }}"></script>
+
+<head>
+  <title>Andrew Pensoneault</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+  <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
+</head>
+
+<body>
+  <div class="content">
+    <h1>Andrew Pensoneault</h1>
+    <div class="button-list">
+      <div class="button" onclick="ClickTo('projects')">Projects</div>
+      <div class="button" onclick="ClickTo('links')">Links</div>
+      <div class="button" onclick="ClickTo('contact')">Contact</div>
+    </div>
+    <h2 id="about-me"> About Me:</h2>
+    <br>
+    <div class="photo-box">
+      <img class="avatar" src="{{ url_for('static', filename='/img/andrew.jpg') }}" alt="Avatar" draggable="false"
+        ondragstart="return false;">
+    </div>
+    <br>
+    <h2 id="Projects"> Projects:</h2>
+    <br>
+    <div class="project-list">
+      <div class="project" href="">Project1</div>
+      <div class="project" href="">Project2</div>
+      <div class="project" href="">Project3</div>
+      <div class="project" href="">Project4</div>
+      <div class="project" href="">Project5</div>
+      <div class="project" href="">Project6</div>
+      <div class="project" href="">Project7</div>
+      <div class="project" href="">Project8</div>
+    </div>
+    <br>
+    <h2 id="Links"> Links:</h2>
+    <div id="Publications"> <a href=https://scholar.google.com/citations?user=bdsNskEAAAAJ&hl=en>Publications</a> </div>
+    <div id="Resume"> <a href=https://github.com/resume>Resume</a> </div>
+    <div id="LinkedIn"><a href= https://www.linkedin.com/in/pensoneault>  LinkedIn</a> </div>
+    <div id="GitHub"> <a href= https://github.com/Andrewpensoneault>  GitHub</a> </div>
+    <br>
+    <h2 id="Links"> Contact:</h2>
+    <div id="Email">Email - <a href= mailto:apensoneault@gmail.com>  apensoneault@gmail.com</a> </div>
+    <div id="Phone Number">Phone Number - <a href= tel:7816977851>  (781) 697-7851</a> </div>
+    <br>
+  </div>
+</body>
+
+</html>
