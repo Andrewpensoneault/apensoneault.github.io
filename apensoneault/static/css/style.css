@@ -28,6 +28,14 @@ body {
 	align-items: center;
 }
 
+.intro{
+	position:relative;
+	left: 25%;
+	width: calc(100% - 2 * 25%);
+	text-align: center;
+
+}
+
 .links {
 	align-items: center;
 	text-align: center;
@@ -133,4 +141,25 @@ a {
 a:hover {
 	color: #191919;
 	background-color: #FFFFFF;
+}
+
+.material-icons {
+	font-size: 20pt;
+	font-family: 'Material Icons';
+    display: inline-flex;
+    vertical-align: bottom;  
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+  
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+  
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+  }
+  
+.iconify{
+	width: auto;
 }
